@@ -1,6 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { UserData } from './types/UserData';
 
-const Profile = ({ data }) => {
+interface ProfileProps {
+  data: UserData;
+}
+
+const Profile: React.FC<ProfileProps> = ({ data }) => {
   return (
     <div className='outline outline-1 outline-[#343a41] p-3 rounded-md w-[310px]'>
       <div className="flex gap-2">
@@ -24,7 +29,7 @@ const Profile = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

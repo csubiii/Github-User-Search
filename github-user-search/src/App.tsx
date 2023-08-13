@@ -1,14 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Profile from './Profile';
+import { UserData } from './types/UserData';
 
-type UserData = {
-  login: string,
-  avatar_url: string,
-  location: string,
-  bio: string,
-  followers: number,
-  following: number,
-}
 
 const App = () => {
 
